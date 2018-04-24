@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: iclass-demo-backend
+  profiles:
+    active: dev
