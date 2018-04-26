@@ -2,6 +2,7 @@ package cn.iclass.backend.controller;
 
 import javax.annotation.Resource;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +17,11 @@ public class Hello {
 	@RequestMapping({"/say","hello"})
 	public String hello(){
 		return say.say();
+	}
+	
+	@GetMapping("/bye")
+	public String bye(){
+		return "bye";
 	}
 	
 	
